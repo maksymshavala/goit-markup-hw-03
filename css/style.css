@@ -49,7 +49,7 @@ img {
 }
 
 .container {
-  width: 1188px;
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -67,8 +67,7 @@ body {
 .page-header {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .page-nav {
@@ -79,11 +78,16 @@ body {
 
 .menu {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
+}
+
+.menu-item {
+  padding: 24px 0;
 }
 
 .page-contacts {
   display: flex;
+  gap: 40px;
 }
 
 .logo {
@@ -93,6 +97,8 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
+
   color: var(--primary-brand-color);
 }
 
@@ -107,6 +113,8 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 
   color: var(--primary-brand-color);
 }
@@ -137,7 +145,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-right: 40px;
 
   color: var(--text-color);
 }
@@ -157,12 +164,11 @@ body {
 .page-hero-section {
   display: flex;
   flex-direction: column;
-  padding-top: 188px;
-  padding-bottom: 188px;
 }
 
 .hero-section {
   background-color: var(--head-color);
+  padding: 188px 0;
 }
 
 .main-head {
@@ -171,7 +177,7 @@ body {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  width: 496px;
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
 
@@ -185,12 +191,13 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   border-radius: 4px;
-  padding: 16px 32px;
+  height: 56px;
   min-width: 169px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 48px;
 
+  border: none;
   color: var(--white-color);
   background-color: var(--primary-brand-color);
 }
@@ -204,7 +211,11 @@ body {
 
 .features-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
+}
+
+.features-list-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .modal-button-portfolio {
@@ -226,6 +237,7 @@ body {
 
 .list-head,
 .head-list {
+  text-align: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -237,6 +249,7 @@ body {
 
 .text-descr,
 .description {
+  text-align: center;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -245,6 +258,10 @@ body {
 
 /* What are we doing section */
 
+.occup-section {
+  padding-bottom: 120px;
+}
+
 .page-occup-list {
   display: flex;
   flex-direction: column;
@@ -252,8 +269,11 @@ body {
 
 .occup-list {
   display: flex;
-  column-gap: 24px;
-  padding-bottom: 120px;
+  gap: 24px;
+}
+
+.occup-list-item {
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 /* Our team section  */
@@ -264,6 +284,7 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  /* padding: 120px 0; */
   margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
@@ -283,19 +304,20 @@ body {
 
 .team-list {
   display: flex;
+  gappx: 24px;
 }
 
 .team-list-item {
   background-color: var(--white-color);
   flex-basis: calc((100%-72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-img {
 }
 
 .team-list-text {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
 }
 
 .page-footer-section {
@@ -303,6 +325,14 @@ body {
 
 .footer-section {
   background-color: var(--head-color);
+  padding: 100px 0;
+}
+
+.text-descr-footer {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
 }
 
 .color-footer {
