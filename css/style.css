@@ -9,6 +9,17 @@
   --white-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 .list {
   list-style: none;
 }
@@ -73,7 +84,6 @@ body {
 .page-nav {
   display: flex;
   align-items: center;
-  column-gap: 76px;
 }
 
 .menu {
@@ -82,7 +92,6 @@ body {
 }
 
 .menu-item {
-  padding: 24px 0;
 }
 
 .page-contacts {
@@ -128,6 +137,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: block;
   color: var(--head-color);
   padding: 24px 0;
 }
@@ -163,8 +173,6 @@ body {
 /* Hero section  */
 
 .page-hero-section {
-  display: flex;
-  flex-direction: column;
 }
 
 .hero-section {
@@ -191,6 +199,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  display: block;
   border-radius: 4px;
   height: 56px;
   min-width: 169px;
@@ -241,7 +250,16 @@ body {
   border: 1px solid transparent;
 }
 
-.list-head,
+.list-head {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+
+  color: var(--head-color);
+}
+
 .head-list {
   text-align: center;
   font-weight: 500;
@@ -254,7 +272,19 @@ body {
 }
 
 .text-descr {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color);
+}
+
+.text-dscr {
   text-align: center;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -263,11 +293,9 @@ body {
 }
 
 .description {
-  text-align: center;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
 
   color: var(--text-color);
 }
@@ -278,8 +306,6 @@ body {
 }
 
 .page-occup-list {
-  display: flex;
-  flex-direction: column;
 }
 
 .occup-list {
@@ -294,14 +320,13 @@ body {
 /* Our team section  */
 
 .sec-head {
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin-bottom: 72px;
-  margin-left: auto;
-  margin-right: auto;
 
   color: var(--head-color);
 }
@@ -337,12 +362,11 @@ body {
 }
 
 .text-descr-footer {
-  text-align: ;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
-  margin-top: 17, 5px;
+  margin-top: 17px;
   max-width: 264px;
 }
 
