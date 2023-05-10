@@ -76,8 +76,6 @@ body {
 /* Header  */
 
 .page-header {
-  display: flex;
-  align-items: center;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -366,7 +364,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
-  margin-top: 17px;
   max-width: 264px;
 }
 
